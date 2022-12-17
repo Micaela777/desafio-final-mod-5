@@ -88,30 +88,30 @@ export function initPlayPage(params) {
 
     div.appendChild(style);
 
-    const countdownComponent = div.querySelector('.countdown') as HTMLElement;
+    const countdownComponent = div.querySelector('.countdown') as any;
 
-    const computerScissorsComponent = div.querySelector('.computer-scissors') as HTMLElement;
-    const computerScissorsComponentImg = computerScissorsComponent.shadowRoot.querySelector('.scissors-img') as HTMLElement;
+    const computerScissorsComponent = div.querySelector('.computer-scissors') as any;
+    const computerScissorsComponentImg = computerScissorsComponent.shadowRoot.querySelector('.scissors-img') as any;
     computerScissorsComponentImg.style.height = '279px';
     computerScissorsComponentImg.style.width = '87px';
     computerScissorsComponentImg.style.objectPosition = '0px 43px';
 
-    const computerRockComponent = div.querySelector('.computer-rock') as HTMLElement;
-    const computerRockComponentImg = computerRockComponent.shadowRoot.querySelector('.rock-img') as HTMLElement;
+    const computerRockComponent = div.querySelector('.computer-rock') as any;
+    const computerRockComponentImg = computerRockComponent.shadowRoot.querySelector('.rock-img') as any;
     computerRockComponentImg.style.height = '279px';
     computerRockComponentImg.style.width = '98px';
     computerRockComponentImg.style.objectPosition = '0px 43px';
 
-    const computerPaperComponent = div.querySelector('.computer-paper') as HTMLElement;
-    const computerPaperComponentImg = computerPaperComponent.shadowRoot.querySelector('.paper-img') as HTMLElement;
+    const computerPaperComponent = div.querySelector('.computer-paper') as any;
+    const computerPaperComponentImg = computerPaperComponent.shadowRoot.querySelector('.paper-img') as any;
     computerPaperComponentImg.style.height = '279px';
     computerPaperComponentImg.style.width = '110px';
     computerPaperComponentImg.style.objectPosition = '0px 43px';
 
 
     // Estilos para el componente -- Tijeras --
-    const scissorsComponent = div.querySelector('.player-scissors') as HTMLElement;
-    const scissorsComponentImg = scissorsComponent.shadowRoot.querySelector('.scissors-img') as HTMLElement;
+    const scissorsComponent = div.querySelector('.player-scissors') as any;
+    const scissorsComponentImg = scissorsComponent.shadowRoot.querySelector('.scissors-img') as any;
     scissorsComponentImg.style.height = '229px';
     scissorsComponentImg.style.width = '74px';
 
@@ -159,8 +159,8 @@ export function initPlayPage(params) {
 
 
     // Estilos para el componente -- Piedra --
-    const rockComponent = div.querySelector('.player-rock') as HTMLElement;
-    const rockComponentImg = rockComponent.shadowRoot.querySelector('.rock-img') as HTMLElement;
+    const rockComponent = div.querySelector('.player-rock') as any;
+    const rockComponentImg = rockComponent.shadowRoot.querySelector('.rock-img') as any;
     rockComponentImg.style.height = '211px';
     rockComponentImg.style.width = '78px';
 
@@ -206,8 +206,8 @@ export function initPlayPage(params) {
     rockComponentImg.addEventListener('click', removeRockClick);
 
     // Estilos para el componente -- Papel --
-    const paperComponent = div.querySelector('.player-paper') as HTMLElement;
-    const paperComponentImg = paperComponent.shadowRoot.querySelector('.paper-img') as HTMLElement;
+    const paperComponent = div.querySelector('.player-paper') as any;
+    const paperComponentImg = paperComponent.shadowRoot.querySelector('.paper-img') as any;
     paperComponentImg.style.height = '211px';
     paperComponentImg.style.width = '86px';
 

@@ -40,7 +40,7 @@ export function initInstructionsPage(params) {
 
     div.appendChild(style);
 
-    const startButtonEl = div.querySelector('.start-button')
+    const startButtonEl = div.querySelector('.start-button') as any;
     startButtonEl.addEventListener('click', () => {
         params.goTo("/play")
     });

@@ -103,10 +103,10 @@ export function initResultsPage(params) {
 
     div.appendChild(style);
 
-    const results = div.querySelector('.results') as HTMLElement;
-    const winImg = div.querySelector('.ganar-img') as HTMLElement;
-    const loseImg = div.querySelector('.perder-img') as HTMLElement;
-    const tieImg = div.querySelector('.empate-img') as HTMLElement;
+    const results = div.querySelector('.results') as any;
+    const winImg = div.querySelector('.ganar-img') as any;
+    const loseImg = div.querySelector('.perder-img') as any;
+    const tieImg = div.querySelector('.empate-img') as any;
 
     if (result == "Ganaste") {
         winImg.style.display = 'flex';
@@ -121,12 +121,12 @@ export function initResultsPage(params) {
         results.style.backgroundColor = '#384298';
     };
 
-    const playAgainButtonEl = div.querySelector('.back-button');
+    const playAgainButtonEl = div.querySelector('.back-button') as any;
     playAgainButtonEl.addEventListener('click', () => {
         params.goTo('/instructions');
     });
 
-    const exitButton = div.querySelector('.exit-button');
+    const exitButton = div.querySelector('.exit-button') as any;
     exitButton.addEventListener('click', () => {
         state.setState({
             ...currentState,
