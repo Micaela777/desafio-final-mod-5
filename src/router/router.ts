@@ -6,7 +6,7 @@ import { initResultsPage } from "../../pages/results-page"
 const BASE_PATH = "/desafio-m5";
 
 function isGithubPages() {
-    return location.host.includes("github.io");
+    return location.host.includes("micaela777.github.io");
 };
 
 const routes = [
