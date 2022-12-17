@@ -15,6 +15,10 @@ const state = {
         },
     },
 
+    init() {
+        const localData = localStorage.getItem("saved-play");
+        this.setState(JSON.parse(localData));
+    },
 
     aleatoryMoveForComputer() {
         const moves = ["piedra", "papel", "tijeras"];
@@ -108,6 +112,7 @@ const state = {
 
     setState(newState) {
         this.data = newState;
+        localStorage.setItem("saved-play", JSON.stringify(newState));
     },
 };
 
