@@ -13,8 +13,8 @@ import { state } from "./state/state"
 (function () {
 
     const root = document.querySelector(".root")
-    initRouter(root);
     state.init();
+    initRouter(root);
 
     initTitleComponent();
     initInstructionsTextComponent();
