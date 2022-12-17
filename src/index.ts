@@ -12,8 +12,8 @@ import { state } from "./state/state"
 
 (function () {
 
-    const root = document.querySelector(".root")
     state.init();
+    const root = document.querySelector(".root")
     initRouter(root);
 
     initTitleComponent();
